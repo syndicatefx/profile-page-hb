@@ -1,0 +1,10 @@
+header.header
+  img(class="header_avatar" src="/img/avatar.jpg")
+  h1.header_title #{user_name}
+  h2.header_sub-title #{user_jobtitle} 
+    if user_company 
+      | &bull; #{user_company}
+
+
+article.article
+  p.h4 <strong>Page Not Found</strong><br>I'm sorry, the page you're trying to reach doesn't exist or has been misplaced.<br> Please try the <a href="/">homepage</a>!
