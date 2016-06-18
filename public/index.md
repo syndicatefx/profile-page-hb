@@ -1,12 +1,27 @@
-#Profile-page-hb
+## About Me
 
-A onepage personal profile boilerplate template to use with harpjs. Get instructions on how to install and use [harpjs](http://harpjs.com).
+Get instructions on how to install and use [harpjs](http://harpjs.com).
 
-##Demo 
+>The static web server with built-in preprocessing.
+Harp serves Jade, Markdown, EJS, CoffeeScript, Sass, LESS and Stylus as HTML, CSS & JavaScript—no configuration necessary.
+<cite>harpjs.com</cite>
 
-[profile-page-hb.surge.sh](http://profile-page-hb.surge.sh)
+### Get Started
 
-##Usage
+Download or clone this template from the [github repo](http://github.com/syndicatefx/profile-page-hb).
+
+#### Folder Structure
+
+- harp.json
+- public
+    - css <small>*(includes minified + unminified style.css)*</small>
+    - img <small>*(all image assets go here)*</small>
+    - _partials <small>*(template blocks)*</small>
+    - 404.jade <small>*(the ol' 404 error page)*</small>
+    - index.md <small>*(what you are reading right now)*</small>
+    - layout.jade <small>*(the main layout)*</small>
+
+#### Usage
 
 Edit __harp.json__ to add __Contact__ and __Social Networks__, your __name__, __job title__, __site name__, __background image url__ and other important meta information. If you're using Google Analytics, you can activate it by changing "analytics" to *true* and adding your unique account ID. 
 

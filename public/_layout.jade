@@ -14,7 +14,7 @@ html(lang="en")
       title #{site_name}  
       meta(name="title", content="#{site_name}")
       meta(name="description", content="#{site_description}")
-      meta(property="og:title", content="#{user_name}") 
+      meta(property="og:title", content="#{site_name}") 
       meta(property="og:description", content="#{site_description}")
       meta(property="og:type", content="website")
       meta(property="og:url", content="#{site_url}")   
@@ -23,11 +23,21 @@ html(lang="en")
       
     link(rel="shortcut icon", href="/img/favicon.ico")
     link(rel="apple-touch-icon", href="/img/apple-touch-icon.png")
-    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Poppins:400,600" ) 
+    link(rel="stylesheet", href="/css/style.min.css")
       
   body
-    main(role="main")
-      != yield
+    main(role="main" style="background:url(#{site_bg_url}) 50% 50% fixed no-repeat;background-size:cover;")
+      if current.path == 'index' 
+        != partial("_partials/intro")
+        != partial("_partials/aboutme")
+      else
+        != yield
+      
+    if current.path == 'index'
+      != partial("_partials/aside")
 
-    if analytics
-      != partial("_shared/analytics")
+      if analytics
+        != partial("_partials/analytics")
+
+      script var moreBtn = document.querySelector(".more-btn"), closeBtn = document.querySelector(".close-btn"), root = document.getElementsByTagName("html")[0]; moreBtn.addEventListener("click", function(e){e.preventDefault(); root.classList.add("active"); }); closeBtn.addEventListener("click", function(){root.classList.remove("active"); });

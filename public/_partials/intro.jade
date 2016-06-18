@@ -1,0 +1,10 @@
+header
+  img(class="header_avatar" src="/img/avatar.jpg")
+  h1.header_title #{user_name}
+  h2.header_sub-title #{user_jobtitle} 
+    if user_company 
+      | &bull; #{user_company}
+
+p.intro #{site_intro}
+
+button.more-btn About Me
