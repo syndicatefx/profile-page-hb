@@ -1,12 +1,8 @@
-#Profile-page-hb
+# Profile-page-hb
 
 A onepage personal profile boilerplate template to use with harpjs. Get instructions on how to install and use [harpjs](http://harpjs.com).
 
-##Demo 
-
-[profile-page-hb.surge.sh](http://profile-page-hb.surge.sh)
-
-##Usage
+## Usage
 
 Edit __harp.json__ to add __Contact__ and __Social Networks__, your __name__, __job title__, __site name__, __background image url__ and other important meta information. If you're using Google Analytics, you can activate it by changing "analytics" to *true* and adding your unique account ID. 
 
