@@ -26,6 +26,3 @@ If you want to change the design or edit the page's layout, you can always adven
 
 - - -
 Thats it, compile with harpjs and upload contents of generated __www/__ folder to your server.
-
-- - -
-Let me know how or where you're using it, hit me up [@syndicatefx](https://twitter.com/syndicatefx)
